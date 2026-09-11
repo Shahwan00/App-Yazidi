@@ -1,0 +1,9 @@
+{
+  "name":"MyConnect",
+  "short_name":"MyConnect",
+  "start_url":"./index.html",
+  "display":"standalone",
+  "background_color":"#f0f2f5",
+  "theme_color":"#0866ff",
+  "lang":"ar"
+}
