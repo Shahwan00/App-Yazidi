@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0866ff">
+<title>MyConnect | تواصل • تعلم • تطور</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="#home">MyConnect</a>
+  <input id="globalSearch" class="search" placeholder="ابحث في MyConnect..." aria-label="بحث">
+  <div class="top-actions">
+    <button class="icon" id="themeBtn" title="الوضع الليلي">🌙</button>
+    <button class="icon" id="bellBtn" title="الإشعارات">🔔<i id="bellDot"></i></button>
+    <button class="icon" id="menuBtn" title="القائمة">☰</button>
+  </div>
+</header>
+
+<div class="shell">
+<aside class="sidebar">
+  <div class="user-card">
+    <div class="avatar big">S</div>
+    <div><b>Shahwan Khalaf</b><small>@shahwan</small></div>
+  </div>
+  <nav>
+    <button data-page="home">🏠 <span>الرئيسية</span></button>
+    <button data-page="profile">👤 <span>ملفي الشخصي</span></button>
+    <button data-page="friends">👥 <span>الأصدقاء</span></button>
+    <button data-page="groups">🌐 <span>المجموعات</span></button>
+    <button data-page="learning" class="learn-link">🎓 <span>تعلم اللغات</span></button>
+    <button data-page="messages">💬 <span>الرسائل</span><em>3</em></button>
+    <button data-page="notifications">🔔 <span>الإشعارات</span></button>
+    <button data-page="settings">⚙️ <span>الإعدادات</span></button>
+  </nav>
+  <div class="side-note"><b>🎓 أكاديمية MyConnect</b><p>تعلم لغة جديدة مع أصدقائك.</p><button class="primary" data-page="learning">ابدأ الآن</button></div>
+</aside>
+
+<main id="app"></main>
+</div>
+
+<nav class="mobile-nav">
+  <button data-page="home">🏠<span>الرئيسية</span></button>
+  <button data-page="friends">👥<span>الأصدقاء</span></button>
+  <button data-page="learning">🎓<span>التعلم</span></button>
+  <button data-page="messages">💬<span>الرسائل</span></button>
+  <button data-page="settings">☰<span>المزيد</span></button>
+</nav>
+
+<div id="toast" class="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
